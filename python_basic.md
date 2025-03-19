@@ -55,7 +55,8 @@
         `map(str, numbers)`
     - map 함수는 반드시 **list** 형태로 저장해줘야함 
         `list(map(str, numbers)))` 
-
+    - ❌ map 객체는 직접 비교가 불가능 (map(a)>0) ❌
+        - 리스트 형태로 바꿔서 해야함(`dot_int = list(map(int, dot[:]`)))
 9. ✅ dict (순서가 없음)
     - pop() : 순서가 없어서 맨 끝 데이터를 pop 할 수 없음 pop('k')
     - dict['k'] = 'a' k 값의 v를 변경하고싶을때
