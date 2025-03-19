@@ -188,3 +188,8 @@ try 블록에서 오류가 발생하면, 어떤 예외(오류)가 발생했는�
     - input()	EOFError 발생	EOFError 발생
         - ✔️ sys.stdin.readline() 사용하면 except: 로 모든 예외를 처리해야 함!
         - ✔️ input() 사용하면 except EOFError: 만 처리하면 됨!
+
+23. ✅ remove()
+    - `.remove()`는 list에서 특정 요소를 지우는 메서드
+    - ()직접적으로 list를 넣을 수 없음, ex('a', 'e')  ❌ ('a') ⭕
+    
