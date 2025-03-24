@@ -78,20 +78,22 @@
         for n in num_list:
         answer[n%2]+=1
         return answer
-    ```
-    print(solution([1, 2, 3, 4, 5]))이 결과를 얻을 때
-    answer[1%2==1] = [0, 0] + 1
-     = >answer[1] = [0 , 1] # 왜냐면 answer[1]에 들어가니깐
-     = > 리스트의 특정 인덱스 값을 직접 바꾸는 방법은 
+    ```python
+        print(solution([1, 2, 3, 4, 5]))이 결과를 얻을 때
+        answer[1%2==1] = [0, 0] + 1
+        = >answer[1] = [0 , 1] # 왜냐면 answer[1]에 들어가니깐
+        = > 리스트의 특정 인덱스 값을 직접 바꾸는 방법은 
          ```
             my_num = [1, 2, 3]
             my_num[1] = 1
             my_num[2] = 2
             print(my_num) # 112
          ```    
-    - '.append()' : 리스트의 끝에 값을 추가할 때
-    - '.insert(인덱스번호, 삽입할 값)' : 리스트의 특정 위치에 값을 삽입할 때
-    - '.extend([삽입할 값들])' : 리스트에 리스트를 추가할 때  
+- '.append()' : 리스트의 끝에 값을 추가할 때
+- '.insert(인덱스번호, 삽입할 값)' : 리스트의 특정 위치에 값을 삽입할 때
+- '.extend([삽입할 값들])' : 리스트에 리스트를 추가할 때 
+- list자체에 *를 할 수 있음 
+    - ` return my_string*k` # "stringstringstring"
 
 11. ✅ import 
     - import 패키지로 내가 원하는 패키지를 불러옴
